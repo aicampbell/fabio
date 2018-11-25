@@ -6,22 +6,22 @@
 Installation
 ============
 
-FabIO can, as any Python module, be installed from its sources,
+FabIO can, as any Python module, be installed from source,
 available on the `Python cheese shop <https://pypi.python.org/pypi/fabio>`_
-but we advice to use binary wheels packages provided for the most common platforms:
+but we advise using binary wheels packages provided for the most common platforms:
 Windows, MacOSX. For Debian Linux and its derivatives (Ubuntu, Mint, ...), FabIO
-is part of the distributions and itss package is named *python-fabio* and can be installed via:
+is part of the distributions and its package is named *python-fabio* and can be installed via:
 
 .. code-block:: shell
 
     sudo apt-get install python-fabio
 
-If you are using MS Windows or MacOSX; binary version (as wheel packages) are
+If you are using MS Windows or MacOSX; a binary version (as wheel packages) is
 PIP-installable.
 PIP is the Python Installer Program, similar to ``apt-get`` for Python.
 It runs under any architecture.
 Since Python 2.7.10 and 3.4, PIP is installed together with Python itself.
-If your Python is elder, PIP can be simply `downloaded <https://bootstrap.pypa.io/get-pip.py>`_
+If your Python is older, PIP can be simply `downloaded <https://bootstrap.pypa.io/get-pip.py>`_
 and executed using your standard Python:
 
 .. code-block:: shell
@@ -29,11 +29,11 @@ and executed using your standard Python:
    python get-pip.py
    pip install fabio
 
-Installation under windows
+Installation under Windows
 --------------------------
 
 Install `Python <http://python.org>`_ from the official web page.
-I would recommend Python 2.7 in 64 bits version if your operating system allows it.
+I would recommend Python 2.7 in 64 bit version if your operating system allows it.
 Python3 (>=3.4) is OK.
 
 If you are looking for an integrated scientific Python distribution on Windows,
@@ -45,7 +45,7 @@ It comes with pip pre-installed and configured.
 Installation using PIP:
 .......................
 
-If you use a Python2 elder than 2.7.10 or a Python3 <3.4, you will need
+If you are using a Python2 older than 2.7.10 or a Python3 <3.4, you will need
 `Download PIP <https://bootstrap.pypa.io/get-pip.py>`_.
 Then install the wheel package manager and all dependencies for :
 
@@ -56,10 +56,10 @@ Then install the wheel package manager and all dependencies for :
     pip install wheel
     pip install fabio
 
-Note: for now, PyQt4 is not yet pip-installable. you will need to get it from riverbankcomputing:
+Note: For now, PyQt4 is not yet pip-installable. You will need to get it from riverbankcomputing:
 http://www.riverbankcomputing.co.uk/software/pyqt/download
 
-Manual installation under windows
+Manual installation under Windows
 .................................
 
 You will find all the `scientific Python stack packaged for Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_ on Christoph
@@ -77,10 +77,10 @@ To determine the version and architecture width of the Python interpreter:
     >>> print("%s bits"%(8 * tuple.__itemsize__))
     64 bits
 
-Installation from sources
+Installation from source
 .........................
 
-* Retrieve the sources from github:
+* Retrieve the source from Github:
 
   + `The master development branch <https://github.com/silx-kit/fabio/archive/master.zip>`_
   + `The latest release <https://github.com/silx-kit/fabio/releases/latest>`_
@@ -129,8 +129,8 @@ Python 2.7, 64 bits and numpy are natively available on MacOSX.
 Install via PIP
 ...............
 
-Since MacOSX 10.11 (El-Captain), PIP is available as part of the standard python installation.
-For elder MacOSX, `download PIP and run <https://bootstrap.pypa.io/get-pip.py>`_.
+Since MacOSX 10.11 (El-Capitan), PIP is available as part of the standard python installation.
+For older MacOSX, `download PIP and run <https://bootstrap.pypa.io/get-pip.py>`_.
 Then install FabIO directly:
 
 .. code-block:: shell
@@ -142,7 +142,7 @@ Then install FabIO directly:
 You will need to get it from
 `riverbankcomputing <http://www.riverbankcomputing.co.uk/software/pyqt/download>`_.
 
-Compile from sources
+Compile from source
 ....................
 
 Get the compiler
@@ -150,12 +150,12 @@ Get the compiler
 Apple provides for free Xcode which contains the compiler needed to build binary extensions.
 Xcode can be installed from the App-store.
 
-Compile the sources
+Compile the source
 ^^^^^^^^^^^^^^^^^^^
 
 Once done, follow the classical procedure (similar to Windows or Linux):
 
-* Retrieve the sources from github:
+* Retrieve the sources from Github:
 
   + `The master development branch <https://github.com/silx-kit/fabio/archive/master.zip>`_
   + `The latest release <https://github.com/silx-kit/fabio/releases/latest>`_
@@ -178,7 +178,7 @@ Manual Installation for any operating system
 Install the dependencies
 ........................
 
-Most Linux distribution come with a Python environment configured. Complete
+Most Linux distributions come with a Python environment configured. Complete
 it with the needed dependencies.
 
 * Python 2.7 or 3.4+
@@ -192,7 +192,7 @@ For full functionality of FabIO the following modules need to be installed:
 
 Once done, follow the classical procedure (similar to Windows or MacOSX):
 
-* Retrieve the sources from github:
+* Retrieve the sources from Github:
 
   + `The master development branch <https://github.com/silx-kit/fabio/archive/master.zip>`_
   + `The latest release <https://github.com/silx-kit/fabio/releases/latest>`_
@@ -234,26 +234,26 @@ For Ubuntu/Debian users, you will need:
 
     sudo apt-get install python-imaging python-imaging-tk python-numpy
 
-Automatic debian packaging
+Automatic Debian packaging
 ..........................
 
 Debian 6 and 7:
 ^^^^^^^^^^^^^^^
-We provide a debian-package builder based on stdeb, building a package for Python2:
+We provide a Debian-package builder based on stdeb, building a package for Python2:
 
 .. code-block:: shell
 
 	sudo apt-get install python-stdeb
 	./build-deb.sh
 
-which builds a debian package and installs them in a single command.
+This builds a Debian package and installs it using a single command.
 Handy for testing, but very clean, see hereafter
 
 Debian 8 and newer
 ^^^^^^^^^^^^^^^^^^
 
-The same script, *build-deb.sh*, will create *real* debian packages:
-It will build a bunch of 6 debian packages:
+The same script, *build-deb.sh*, will create *real* Debian packages:
+It will build a bunch of 6 Debian packages:
  
 * *fabio-bin*: the GUI for visualizing diffraction images
 * *fabio-doc*: the documumentation package
@@ -262,7 +262,7 @@ It will build a bunch of 6 debian packages:
 * *python-fabio*: library built for Python2
 * *python-fabio-dbg*: debug symbols for Python2
 
-For this, you need a complete debian build environment:
+For this, you need a complete Debian build environment:
 
 ::
 
@@ -298,7 +298,7 @@ Under Windows::
    set http_proxy=http://proxy.site.org:3128
 
 Where *proxy.site.org* and *3128* correspond to the proxy server and port on your network.
-At ESRF, you can get this piece of information by phoning to the hotline: 24-24.
+At the ESRF, you can get this piece of information by phoning to the hotline: 24-24.
 
 Many tests are there to deal with malformed files, don't worry if the programs complains in warnings about "bad files",
 it is done on purpose to ensure robustness in FabIO.
@@ -307,7 +307,7 @@ it is done on purpose to ensure robustness in FabIO.
 Run test suite from installation directory
 ..........................................
 
-To run the test:
+To run the tests:
 
 .. code-block:: shell
 
